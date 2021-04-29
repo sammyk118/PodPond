@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { scopes } from "../../utils/config";
 import "./style.css";
 
 function SpotifyComponent(props) {
-  
+  useEffect(() => {
+    console.log(process.env)
+  })
   return (  
     <div className="spotify-login">
       <div className="spotify-form">
