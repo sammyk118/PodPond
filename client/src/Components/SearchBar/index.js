@@ -74,7 +74,7 @@ function SearchBar(props) {
           />
         </form>
         <small className="justify-content-center">
-          Press enter to start the search
+          Press enter to search
         </small>
       </div>
       <Wrapper>
