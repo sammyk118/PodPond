@@ -7,6 +7,7 @@ import SearchPage from "./pages/SearchPage";
 import SavedPodcast from "./pages/SavedPodcast";
 import SignUpPage from "./pages/SignUpPage";
 import SpotifyPage from "./pages/SpotifyPage";
+import SecSearchPage from "./pages/SecSearchPage";
 
 function App() {
   const [userObject, setUserObject] = useState({
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/signup" render={(props) => <SignUpPage {...props} userObject={userObject} setUserObject={setUserObject} />} />
         {/* Routes above are NOT protected by authentication, routes below WILL be protected by authentication. */}
         <Route exact path="/search" render={(props) => <SearchPage {...props} userObject={userObject} setUserObject={setUserObject} />} />
+        <Route exact path="/secsearch" render={(props) => <SecSearchPage {...props} userObject={userObject} setUserObject={setUserObject} />} />
         <Route exact path="/mypond" render={(props) => <SavedPodcast {...props} userObject={userObject} setUserObject={setUserObject} />}/>
         <Route exact path="*" render={(props) => <SpotifyPage {...props} userObject={userObject} setUserObject={setUserObject} />} />
       </Switch>

@@ -17,6 +17,11 @@ function NavBar(props) {
             </Link>
         </li>
         <li className="nav-item">
+          <Link to="/secsearch" className="nav-link">
+            Secure Search
+            </Link>
+        </li>
+        <li className="nav-item">
           <Link to="/mypond" className="nav-link">
             My Pond
             </Link>

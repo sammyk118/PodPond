@@ -39,14 +39,6 @@ function SearchBar(props) {
     });
 
     console.log("search: ", search);
-    // axios.get(
-    //   query,
-    //   {
-    //     headers: {
-    //       "Authorization": "Bearer" + token
-    //     }
-    //   }
-    // )
   }
 
   function saveToPond(podcast) {
