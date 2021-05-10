@@ -3,6 +3,11 @@ const path = require("path");
 const pondController = require("../controller/pondController");
 const passport = require("../config/passport");
 
+
+router.post("/api/getRefToken", function (req, res) {
+    console.log("successful server side route!")
+})
+
 // Calls methods from pondController
 
 router.post("/api/login", passport.authenticate("local"), function (req, res) {

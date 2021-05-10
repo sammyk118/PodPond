@@ -1,10 +1,14 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
 import Jumbotron from "../../Components/Jumbotron";
 import SearchBar from "../../Components/SearchBar";
 import LandingPage from "../LandingPage";
 
 function SecSearchPage(props) {
-  console.log("here!", props.userObject.loggedIn)
+    useEffect(() => {
+        console.log("here!", props.userObject.loggedIn)
+        axios.post("/api/getRefToken")
+    })
   if (props.userObject.loggedIn) {
     return (
       <div>
